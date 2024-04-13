@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahri-Tseba Restaurant</title>
+    <style>
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr;
+        grid-template-rows: 1fr,1fr,1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+         
+        }
+        #header{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: aquamarine;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            height: 90%;
+            
+
+        }
+        #nav{
+            grid-column: 2/4;
+            grid-row: 1/1;
+            background-color: lightblue;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            width: 80%;
+            height: 90%;
+            
+            
+            
+        }
+        @media (min-width:768px) {
+            #nav ul{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+            }
+
+        }
+           
+        @media (max-width:768px) {
+            #nav ul{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+        }
+            
+        }
+       
+        #content{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            background-color: azure;
+            text-align: left;
+            font-size: 20px;
+            box-sizing: content-box;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 5px;
+    
+        
+        }
+        #sidebar{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-color: beige;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            width: 90%;
+            height: 50%;
+        }
+        #footer{
+            grid-column: 1/4;
+            grid-row: 4/4;
+            background-color: aqua;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            width: 50%;
+            height: 50%;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main id="wrapper">
+        <nav id="nav">
+            <ul type ="none">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <section id="header"><h1>Bahri-Tseba Restaurant</h1> 
+            <img src="Bahri tseba logo.jpeg" width="300px" height="200px" alt="bahri-tseba-logo"/></section>
+        <section id="content">
+        <p> Welcome to Bahri-Tseba's Tigrian's Kitchen!
+            Bahri-Tseba Tigrains Kitchen offers Signature Kitfo, Lamb Aletcha, Tsebhi-Derho, lamb and beef tibs and more!
+            Bahri-Tseba's Tigrains Kitchen also has breakfast options along with a variety of sides for you to discover and enjoy!
+            We have very nice local drinks,like Tejji,Suwa,and local Coffe. 
+            <img src="bahri-tseba-local food.jpg" width="300px" height="200"/>
+            <img src="local food images.jpeg" width="300px" height="200"/>
+            <img src="Tigray local drinks.webp" width="300px" height="200"/>
+            </p>
+       </section>
+       <section id="sidebar">
+        <p> For more info <a href="#" >...</a></p>
+       </section>
+       <footer id="footer">
+        <p>Copyright &copy; All rights are reserved! </p>
+       </footer>
+    </main>
+</body>
+</html>
