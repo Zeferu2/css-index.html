@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+</head>
+    <style>
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+   
+   .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1fr,2fr,2fr,1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100vh;
+    height: 100vw;
+
+}
+    #header{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        background-color: aquamarine;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    #nav{
+        grid-column: 2/4;
+        grid-row: 1/1;
+        background-color: aquamarine;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    @media  (min-width: 768px)
+    {
+        #nav ul{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+    }
+        
+    @media (max-width: 768px)
+     {
+        #nav ul{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+    }
+    #sidebar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: lightpink;
+        text-align: left;
+        font-size: 15px;
+        box-sizing: content-box;
+        border: 2px solid black;
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    #content{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-color: lightblue;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+        img{
+        width: 10em;
+        height: fit-content;
+        float: left;
+        margin: 5px;
+    }
+    
+    }
+    #footer{
+        grid-column: 1/4;
+        grid-row: 3/3;
+        background-color: lightpink;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px;
+        width: 100%;
+        height: 50%;
+    }
+    </style>
+<body>
+    <main class="wrapper">
+        <header id="header"><h1>Bahri-Tseba Restaurant</h1>
+            <img src="bahri-tseba-logo.png" width="300" height="200">
+        </header>
+        <nav id="nav">
+            <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <sidebar id="sidebar">
+                <a href="#">Happy Hours</a>
+                <button>Order Now</button>
+        </sidebar>
+        <content id="content">
+               <div> Bahri-Tseba's people social interaction.
+                people are very sociable.The help each other any time if some thing happened either good or bad.
+               </div>
+                Topography of Bahri-Tseba is a sami flat and mountainous.<div><img src="bahri-tseba-local food.jpg" /> two topogray types.These are:
+                    1.flat
+                    2. mountainous
+                The Religion of Bahri-Tseba's  people 
+                Hundred percent of the people belive in ortodox chirstianity.</div> 
+        </content> 
+        <footer id="footer">
+                <p>Copyright &copy; Bahri-Tseba Resturant</p>
+        </footer>
+</main>
+</body>
+</html>
